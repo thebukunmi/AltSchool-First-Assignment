@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bukunmi's First Assignment</title>
+  <link href="signup.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!--- nav container--->
+  <nav class="nav-container">
+    <a href="https://altschoolafrica.com"><img src="../Images/altschool_africa.png" alt="AltSchool Logo" class="nav-left"></a>
+    <div class="nav-right">
+      <ul>
+        <a href="index.html"><li class="nav-link">Home</li></a>
+        <a href="#"><li class="nav-link">Student Info</li></a>
+        <a href="signup.html" class="apply-now"><li class="nav-link">Apply Now!</li></a>
+      </ul>      
+    </div>
+  </nav>
+
+  <!--form container-->
+  <div class="form-container">    
+    <h1>Application Form</h1>
+    <p>Please fill in your details</p>
+    <form method="post" action='#'>
+      <fieldset>
+        <div class="first-last-name">
+          <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required placeholder="Enter first name" /></label>
+          <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required placeholder="Enter last name"/></label>
+        </div>
+        <div class="gender-dateof-birth">
+          <label for="gender">Gender 
+            <select id="referrer" name="referrer">
+              <option value="" hidden selected>Select gender</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Others</option>
+            </select>
+          </label>
+          <label for="dateof-birth">Date of Birth <input id="dateof-birth" name="dateof-birth" type="date" required  /></label>
+        </div>
+        <div class="email-education">
+          <label for="email">Email Address <input id="email" name="email" type="email" required placeholder="Enter email address" /></label>
+          <label for="education">Education Level 
+            <select id="referrer" name="referrer">
+              <option value="" hidden selected>Select level of education</option>
+              <option value="1">Secondary Education</option>
+              <option value="2">Bachelor's Degree</option>
+              <option value="3">Master's Degree</option>
+              <option value="4">Others</option>
+            </select>
+          </label>
+        </div>
+        <div class="country-state">          
+          <label for="country">Country 
+            <select id="referrer" name="referrer">
+              <option value="" hidden selected>Select your country</option>
+              <option value="1">Nigeria</option>
+              <option value="2">Ghana</option>
+              <option value="3">Kenya</option>
+              <option value="4">Others</option>
+            </select>
+          </label>
+          <label for="state">State/City of Residence <input id="state" name="state" type="text" required placeholder="Enter your state of residence" /></label>
+        </div>
+        <div class="employment-status-phone-number">          
+          <label for="employment-status">Employment Status 
+            <select id="referrer" name="referrer">
+              <option value="" hidden selected class="selected">Select employment status</option>
+              <option value="1">Entrepreneur</option>
+              <option value="2">Full-time Employment</option>
+              <option value="3">Student</option>
+              <option value="4">Others</option>
+            </select>
+          </label>
+          <label for="phone-number">Phone Number <input id="phone-number" name="phone-number" type="tel" required placeholder="08154387000" />
+          </label>
+        </div>  
+        <div class="choose-school-course">          
+          <label for="school">Choose School
+            <select id="referrer" name="referrer">
+              <option value="" hidden selected>Select school</option>
+              <option value="1">School of Software Development</option>
+              <option value="2">School of Data Analytics</option>
+              <option value="3">School of Product Design</option>
+            </select>
+          </label>
+          <label for="course">Choose Course of Study
+            <select id="referrer" name="referrer">
+              <option value="" hidden selected>Select course</option>
+              <option value="1">Frontend Engineering</option>
+              <option value="2">Backend Engineering</option>
+              <option value="3">Cloud Engineering</option>            
+            </select>
+          </label>
+        </div>
+        <div class="channel-discount-code">          
+          <label for="channel">How did you hear about us?
+            <select id="referrer" name="referrer">
+              <option value="" hidden selected>Select channel</option>
+              <option value="1">YouTube videos</option>
+              <option value="2">Twitter</option>
+              <option value="3">Word of mouth</option>
+              <option value="4">Others</option>
+            </select>
+          </label>
+          <label for="discount-code">Discount Code (optional)<input id="discount-code" name="discount-code" type="text" placeholder="Scholarship or discount code" /></label>
+        </div>
+        <div class="privacy">
+          <p>By clicking continue, I agree to <a href="https://altschoolafrica.com/terms-and-conditions">Terms of Use</a> and acknowledge that I have read the <a href="https://altschoolafrica.com/privacy-policy">Privacy Policy</a></p>
+          <a href="#"><button class="form-button">Proceed</button></a>
+        </div>  
+
+      </fieldset>
+    </form>          
+  </div>
+  <div class="student-login">
+    <p>Already have an account? <a href="#">Log In</a></p>
+  </div>
+</body>
+</html>

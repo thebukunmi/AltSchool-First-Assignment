@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color:beige; 
+}
+
+.nav-container{
+  background-color: blanchedalmond;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.nav-left{ 
+  margin-left: 10px;
+  width: 100px;
+}
+
+.nav-right{
+  margin-right: 10px;
+  padding: 15px 10px;
+}
+
+.nav-right ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px; 
+  font-size: 18px;
+}
+
+.nav-right ul a{
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-right .apply-now{
+  background-color: brown; 
+  color: beige;   
+  padding: 15px 5px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.student-info-container{
+  padding-top: 130px; 
+  padding-bottom: 100px;  
+}
+
+.student-info{
+  display: flex;
+  align-items: center;  
+}
+
+.student-info .student-picture{
+  width: 42%; 
+  margin: 50px;
+  border-radius: 50%;
+  border: 5px solid brown;
+}
+
+.student-salutation{
+  text-align: left;
+}
+
+.student-info .student-salutation{
+  font-size: 70px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.student-info .student-name{
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.student-info .student-more{
+  font-size: 18px;
+  background-color: brown;  
+  width: 150px;
+  padding: 15px 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.student-info a{
+  color: beige;
+  text-decoration: none;
+}
+
+.student-more-info{
+  background-color: beige;
+  margin: 50px;
+}
+
+.student-more-info h3{
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.student-fullname, .student-id, .biography, .why-altschool, .altschool-goals{
+  margin-bottom: 15px;
+}
+
+.student-fullname h4, .student-id h4, .biography h4, .why-altschool h4, .altschool-goals h4{
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.student-fullname p, .student-id p, .biography p, .why-altschool p, .altschool-goals p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 10px;
+  color: brown;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* @media screen and (max-width: 1280px) and (min-width: 500px) {
+  .student-info{
+    display: block;
+    text-align: center;
+  }
+  
+} */
+
+@media (max-width: 600px){ 
+  html, body{
+  overflow-x: hidden;
+  } 
+
+  .nav-left{     
+    width: 80px;
+    height: 80px;  
+  }  
+
+  .nav-right{
+    margin-right: 10px;
+    padding: 10px 5px;
+  }
+  
+  .nav-right ul li{    
+    margin: 0px 5px; 
+    font-size: 13px;
+  }
+
+  .nav-right .apply-now{ 
+    padding: 8px 5px;
+  }
+
+  .student-info{
+    display: block;   
+    text-align: center;  
+  }
+  
+  .student-info .student-picture{
+    width: 80%;     
+    margin: 20px;
+  }
+
+  .student-salutation-name{
+    margin: 10px 15px;
+  }
+  
+  .student-info .student-salutation{
+    font-size: 55px;  
+    text-align: center;     
+  } 
+  
+ .student-info .student-name{
+    font-size: 30px;
+    text-align: center;       
+  }
+  
+  .student-info .student-more{
+    font-size: 14px;     
+    width: 100px;
+    margin: 0 auto;    
+  }
+  
+  .student-more-info{
+    margin: 10px;
+  }
+  
+  .student-more-info h3{
+    font-size: 38px;
+    text-align: center;
+    margin-left: 15px;
+  }
+  
+  .student-fullname h4, .student-id h4, .biography h4, .why-altschool h4, .altschool-goals h4{
+    font-size: 20px;    
+  }
+  
+  .student-fullname p, .student-id p, .biography p, .why-altschool p, .altschool-goals p{
+    font-size: 14px;    
+  }
+} 
+
+
+
+
+
+ /* @media only screen and (max-width: 768px) {
+ 
+  .nav-left{     
+    width: 80px;
+    height: 80px;  
+  }  
+
+  .nav-right{
+    margin-right: 10px;
+    padding: 10px 5px;
+  }
+  
+  .nav-right ul li{    
+    margin: 0px 5px; 
+    font-size: 13px;
+  }
+
+  .nav-right .apply-now{ 
+    padding: 8px 5px;
+  }
+
+  .student-info{
+    display: block;   
+    text-align: center;  
+
+  }
+  
+} */
